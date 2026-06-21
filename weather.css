@@ -1,0 +1,138 @@
+
+body{
+    height:100vh;
+  
+    background:linear-gradient(135deg,#0f172a,#1e3a8a,#38bdf8);
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    width:100%;
+    max-width:500px;
+    padding:20px;
+    text-align: center;
+}
+.WeatherForm{
+    display:flex;
+    gap:12px;
+    margin-bottom: 30px;
+    
+}
+.WeatherForm input{
+    flex:1;
+    padding:15px;
+    border:none;
+    outline:none;
+    border-radius:14px;
+    font-size:18px;
+    background:white;
+    box-shadow:0 5px 15px rgba(0,0,0,0.15);
+   
+}
+.WeatherForm button{
+    padding:15px 22px;
+    border:none;
+    border-radius:14px;
+    background:#2563eb;
+    color:white;
+    font-size:16px;
+    font-weight: 600;
+    cursor:pointer;
+    transition:0.3s;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+.WeatherForm button:hover{
+    background:#1d4ed8;
+    transform:translateY(-2px);
+}
+.weather-card{
+    background: rgba(255,255,255,0.15);
+    backdrop-filter: blur(12px);
+    padding:35px 25px;
+    border-radius: 25px;
+    color:white;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+    animation:fadeIn 0.5s ease;
+    display:flex;
+    flex-direction: column;
+}
+.city{
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+.temp{
+    font-size: 70px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.desc{
+    font-size:24px;
+    margin-bottom: 20px;
+    opacity:0.9;
+}
+.details{
+    display:flex;
+    justify-content: space-around;
+    margin-top: 25px;
+}
+.details div{
+    text-align: center;
+
+}
+.details h3{
+    font-size: 18px;
+    margin-bottom: 5px;
+
+}
+.details p{
+    font-size: 16px;
+    opacity:0.9;
+}
+.weather-icon{
+    width:100px;
+    margin-bottom: 15px;
+}
+@keyframes fadeIn{
+    from{
+        opacity:0;
+        transform:translateY(20px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+.errorDisplay{
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #38bdf8;
+}
+.cityDisplay,.tempDisplay{
+    font-size: 3.5rem;
+    font-weight: bold;
+    color:white;
+    margin-bottom: 25px;
+}
+.humidityDisplay{
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+.descDisplay{
+   
+    font-family: Italic;
+    font-size: 2rem;
+}
+.errorDisplay{
+    font-size: 2.5rem;
+    font-weight: bold;
+    color:white
+}
+.weatherEmoji{
+    font-size: 7.5rem;
+    margin:0;
+
+}
