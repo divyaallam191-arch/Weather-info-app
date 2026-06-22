@@ -17,9 +17,6 @@ A simple weather application built using HTML, CSS, and JavaScript.
 - JavaScript
 - Weather API
 
-## Screenshots
-(Add screenshots here)
-
 ## How to Run
 1. Clone the repository
 2. Open weather.html in a browser
